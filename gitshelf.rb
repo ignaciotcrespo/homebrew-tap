@@ -11,7 +11,7 @@ class Gitshelf < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.1.0/gitshelf_0.1.0_darwin_amd64.tar.gz"
-      sha256 "beea83a8c76579e290472ce5783039ff0f8262126869abea00e71d0c09ebf077"
+      sha256 "17542962febdb8a61be19823cc925a9b9a876064b5d8bb06d047c57cbe3b1ea8"
 
       define_method(:install) do
         bin.install "gitshelf"
@@ -19,7 +19,7 @@ class Gitshelf < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.1.0/gitshelf_0.1.0_darwin_arm64.tar.gz"
-      sha256 "57b4501f27afc8d7e0c8438803d8fa4be003c0a2b448c60cb2809c3c89f6898a"
+      sha256 "172a0270644a1e2e7bc9745b85311db9c1ebdc4977df068e15fccd835c5d402a"
 
       define_method(:install) do
         bin.install "gitshelf"
@@ -30,14 +30,14 @@ class Gitshelf < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.1.0/gitshelf_0.1.0_linux_amd64.tar.gz"
-      sha256 "8b38b227cf4b10ee2f3af44a0145ee3bf3857ba3c500bdd84c24846d4edf4a56"
+      sha256 "a122e70b93df8ae603c9c9c22f986c73b7093136c7cb18418bc25ff43e438396"
       define_method(:install) do
         bin.install "gitshelf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.1.0/gitshelf_0.1.0_linux_arm64.tar.gz"
-      sha256 "883e0f2af46c12b04755acf1433d11390424175401e2e70939ae642ba00922f8"
+      sha256 "68531f3afc81753331be97c7363849c4940d1cf60283a2b74c079c4259a96c07"
       define_method(:install) do
         bin.install "gitshelf"
       end
