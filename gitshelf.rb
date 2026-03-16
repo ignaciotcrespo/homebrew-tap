@@ -5,21 +5,21 @@
 class Gitshelf < Formula
   desc "Git changelists and shelves TUI, inspired by IntelliJ IDEA"
   homepage "https://github.com/ignaciotcrespo/gitshelf"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.1/gitshelf_0.6.1_darwin_amd64.tar.gz"
-      sha256 "18e2c7ec6ac16bc378703b4ab037f664101894a0e7036a63006583a4f26bda89"
+      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.2/gitshelf_0.6.2_darwin_amd64.tar.gz"
+      sha256 "f83b0bd166723a52a953d96bc110448d8ec3433ddacc8d7ffa14be7826ab23e7"
 
       define_method(:install) do
         bin.install "gitshelf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.1/gitshelf_0.6.1_darwin_arm64.tar.gz"
-      sha256 "7f03759c2b3ef8552c6c93cd451836097685b220079e893ec4306f36167c3f8c"
+      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.2/gitshelf_0.6.2_darwin_arm64.tar.gz"
+      sha256 "589ef56b44b0c32951e5de2c5426e93ed000e86444c7e4291758c5fccac344a9"
 
       define_method(:install) do
         bin.install "gitshelf"
@@ -29,15 +29,15 @@ class Gitshelf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.1/gitshelf_0.6.1_linux_amd64.tar.gz"
-      sha256 "45ea35e62590c3028eedba20779d4b097dd6008a690a88d51ffc50e8f7667614"
+      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.2/gitshelf_0.6.2_linux_amd64.tar.gz"
+      sha256 "73c3c81a3936c807e9c773e7a3b9f813a99fe39efda55616083b92adc4fcad2b"
       define_method(:install) do
         bin.install "gitshelf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.1/gitshelf_0.6.1_linux_arm64.tar.gz"
-      sha256 "b9f1f8bc0fdc92e5d6c0100defbe77d7200e925d3a7d0fa1388603c6a56bda6b"
+      url "https://github.com/ignaciotcrespo/gitshelf/releases/download/v0.6.2/gitshelf_0.6.2_linux_arm64.tar.gz"
+      sha256 "2cadc09cc7f0ff21fefc20117bf10bde62e03eaf1132b7b6426601f28535f813"
       define_method(:install) do
         bin.install "gitshelf"
       end
