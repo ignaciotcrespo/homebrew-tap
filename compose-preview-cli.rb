@@ -5,21 +5,21 @@
 class ComposePreviewCli < Formula
   desc "Terminal UI for browsing and running Jetpack Compose previews without Android Studio"
   homepage "https://github.com/ignaciotcrespo/compose-preview-cli"
-  version "0.3.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.3.0/compose-preview-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "2d822b0111048874057175677c9af0818c5d1413b025732f9d80b26ac73cdbcf"
+      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.4.1/compose-preview-cli_0.4.1_darwin_amd64.tar.gz"
+      sha256 "4bcca65e2e714cfff9d6de0a9a2277029cf2f2f6fd638bfbba3f8dbe9bdc9eb9"
 
       define_method(:install) do
         bin.install "compose-preview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.3.0/compose-preview-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "52e21aee120efa1769ff8cfdfdbcb430345cde11d746c71569580cda0470ab49"
+      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.4.1/compose-preview-cli_0.4.1_darwin_arm64.tar.gz"
+      sha256 "f5f4744a1ef24e2a8c8d76e742cff6d61cb658fb135e922093723cc370170fda"
 
       define_method(:install) do
         bin.install "compose-preview"
@@ -29,15 +29,15 @@ class ComposePreviewCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.3.0/compose-preview-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "1e7d95e005da158e9f18f466f8ddc7c6de9ed042b16b875b21badaf58862b97b"
+      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.4.1/compose-preview-cli_0.4.1_linux_amd64.tar.gz"
+      sha256 "b8e6e2b0f4d8110e62226e5d0f1d4eb6f1836d3e2d286159f43d07809987fe63"
       define_method(:install) do
         bin.install "compose-preview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.3.0/compose-preview-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "f04b28ad1d6a6f7fa771786df55877ffc7afe0b33f0a3b06d49388ba1d7062eb"
+      url "https://github.com/ignaciotcrespo/compose-preview-cli/releases/download/v0.4.1/compose-preview-cli_0.4.1_linux_arm64.tar.gz"
+      sha256 "85b83ab67a1e4614f922a56cddb4daeb6da89fb98d57a9665971e3c6a7a1b36e"
       define_method(:install) do
         bin.install "compose-preview"
       end
